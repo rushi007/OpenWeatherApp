@@ -1,0 +1,56 @@
+{
+    "apiKey": "287a36958ccc98cb615c1b5f6e9e2ca5",
+    "baseURI": "http://api.openweathermap.org/data/2.5",
+    "cities": [
+    {
+      "id": 2759794,
+      "name": "Amsterdam",
+      "state": "",
+      "country": "NL",
+      "coord": {
+          "lon": 4.88969,
+          "lat": 52.374031
+      }
+    },
+    {
+      "id": 3128760,
+      "name": "Barcelona",
+      "state": "",
+      "country": "ES",
+      "coord": {
+          "lon": 2.15899,
+          "lat": 41.38879
+      }
+    },
+    {
+      "id": 2950158,
+      "name": "Berlin",
+      "state": "",
+      "country": "DE",
+      "coord": {
+          "lon": 10.45,
+          "lat": 54.033329
+      }
+    },
+    {
+      "id": 6458923,
+      "name": "Lisbon",
+      "state": "",
+      "country": "PT",
+      "coord": {
+          "lon": -9.14843,
+          "lat": 38.726349
+      }
+    },
+    {
+      "id": 2968815,
+      "name": "Paris",
+      "state": "",
+      "country": "FR",
+      "coord": {
+          "lon": 2.3486,
+          "lat": 48.853401
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <h4 class="modal-title">Weather Forecast of {{id}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.close(this.id)">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Date & Time</th>
+                <th scope="col">Temperature</th>
+                <th scope="col">Feels like</th>
+                <th scope="col">Pressure</th>
+                <th scope="col">Humidity</th>
+                <th scope="col">Dew point</th>
+                <th scope="col">UVI</th>
+                <th scope="col">Visibility</th>
+                <th scope="col">Wind speed</th>
+                <th scope="col">Wind Degree</th>
+                <th scope="col">weather</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let fhourly of hourlyforecastData'>
+                <th scope="row">{{ fhourly.dt}}</th>
+                <td>{{ fhourly.temp }}</td>
+                <td>{{ fhourly.feels_like }}</td>
+                <td>{{ fhourly.pressure }}</td>
+                <td>{{ fhourly.humidity }}</td>
+                <td>{{ fhourly.dew_point }}</td>
+                <td>{{ fhourly.uvi }}</td>
+                <td>{{ fhourly.visibility }}</td>
+                <td>{{ fhourly.wind_speed }}</td>
+                <td>{{ fhourly.wind_deg }}</td>
+                <td>{{ fhourly.weather[0].main }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer"></div>

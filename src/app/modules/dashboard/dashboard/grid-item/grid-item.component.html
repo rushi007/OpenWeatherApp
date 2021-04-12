@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ city["name"] }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Lat: {{ coord['lat'] }} & Lon: {{ coord['lon'] }}</h6>
+      <p class="card-text">Average Temperature is {{ currentWeather.temp }}</p>
+      <p class="card-text">Wind speed is {{ currentWeather.wind_speed }}</p>
+      <button class="btn btn-primary btn-sm" (click)="openForecastModal()" type="button" value="View Forecast">View Forecast</button>
+    </div>
+  </div>
